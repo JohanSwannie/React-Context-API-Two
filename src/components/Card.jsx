@@ -1,12 +1,18 @@
-import React from "react";
 import useTheme from "../contexts/theme";
 
 function Card() {
-  const { themeMode } = useTheme();
+  const { themeDark } = useTheme();
+
+  if (themeDark) {
+    document.body.style.backgroundColor = "cornflowerblue";
+  } else {
+    document.body.style.backgroundColor = "rgb(91, 186, 198)";
+  }
+
   return (
-    <div class="mb-4 h-64 w-64 border-8 p-2">
+    <div className="mb-4 h-auto w-96 border-8 p-20 card">
       <img
-        class="h-full w-full "
+        className="h-full w-full "
         src="https://upload.wikimedia.org/wikipedia/commons/c/c3/2019_Toyota_Corolla_XSE_%28MZEA12L%29_in_Blue_Flame%2C_front_left.jpg"
         alt=""
       />
