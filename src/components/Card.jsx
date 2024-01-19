@@ -4,9 +4,9 @@ function Card() {
   const { themeDark } = useTheme();
 
   if (themeDark) {
-    document.body.style.backgroundColor = "cornflowerblue";
+    document.body.style.backgroundColor = "rgb(149, 143, 143)";
   } else {
-    document.body.style.backgroundColor = "rgb(91, 186, 198)";
+    document.body.style.backgroundColor = "rgb(48, 44, 44)";
   }
 
   return (
