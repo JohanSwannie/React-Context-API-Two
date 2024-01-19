@@ -7,9 +7,10 @@ function App() {
 
   useEffect(() => {
     if (!themeDark) {
-      document.querySelector(".card").style.backgroundColor = "#FFF";
+      document.querySelector(".card").style.backgroundColor =
+        "rgb(149, 143, 143)";
     } else {
-      document.querySelector(".card").style.backgroundColor = "#000";
+      document.querySelector(".card").style.backgroundColor = "rgb(48, 44, 44)";
     }
   }, [themeDark]);
 
@@ -17,7 +18,7 @@ function App() {
     <ThemeProvider value={{ themeDark }}>
       <div className="w-96 grid grid-cols-1 mx-auto text-center">
         <button
-          className="w-40 p-3 bg-red-600"
+          className="w-40 p-3 bg-red-600 text-white mb-10 mx-auto"
           onClick={() => setThemeDark(!themeDark)}
         >
           Change Theme
