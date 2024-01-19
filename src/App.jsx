@@ -16,7 +16,7 @@ function App() {
 
   return (
     <ThemeProvider value={{ themeDark }}>
-      <div className="w-96 grid grid-cols-1 mx-auto text-center">
+      <div className="w-3/4 grid grid-cols-1 mx-auto text-center">
         <button
           className="w-40 p-3 bg-red-600 text-white mb-10 mx-auto"
           onClick={() => setThemeDark(!themeDark)}
