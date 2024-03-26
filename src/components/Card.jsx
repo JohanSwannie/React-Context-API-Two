@@ -14,7 +14,7 @@ function Card() {
       <img
         className="h-full w-full mb-8"
         src="https://upload.wikimedia.org/wikipedia/commons/c/c3/2019_Toyota_Corolla_XSE_%28MZEA12L%29_in_Blue_Flame%2C_front_left.jpg"
-        alt=""
+        alt="car"
       />
       {themeDark ? (
         <h1 className="text-white mt-8">Toyota - $14995</h1>
