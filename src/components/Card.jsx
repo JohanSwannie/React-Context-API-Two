@@ -17,7 +17,7 @@ function Card() {
         alt="car"
       />
       {themeDark ? (
-        <h1 className="text-white mt-8">Toyota - $14995</h1>
+        <h1 className="text-white font-bold mt-8">Toyota - $14995</h1>
       ) : (
         <h1 className="text-black font-bold mt-8">Toyota - $14995</h1>
       )}
