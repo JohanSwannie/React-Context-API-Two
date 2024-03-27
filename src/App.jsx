@@ -5,13 +5,14 @@ import Card from "./components/Card";
 function App() {
   const [themeDark, setThemeDark] = useState(false);
 
-  const cardie = document.querySelector(".card");
-
   useEffect(() => {
     if (!themeDark) {
-      cardie.style.backgroundColor = "rgb(149, 143, 143)";
+      document.body.style.backgroundColor = "rgb(48, 44, 44)";
+      document.querySelector(".card").style.backgroundColor =
+        "rgb(149, 143, 143)";
     } else {
-      cardie.style.backgroundColor = "rgb(48, 44, 44)";
+      document.body.style.backgroundColor = "rgb(149, 143, 143)";
+      document.querySelector(".card").style.backgroundColor = "rgb(48, 44, 44)";
     }
   }, [themeDark]);
 
